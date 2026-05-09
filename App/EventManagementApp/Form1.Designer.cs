@@ -34,6 +34,7 @@
             this.btnEntryPass = new System.Windows.Forms.Button();
             this.btnStaff = new System.Windows.Forms.Button();
             this.btnReports = new System.Windows.Forms.Button();
+            this.btnVenue = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnPatron
@@ -96,11 +97,22 @@
             this.btnReports.UseVisualStyleBackColor = true;
             this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
             // 
+            // btnVenue
+            // 
+            this.btnVenue.Location = new System.Drawing.Point(36, 325);
+            this.btnVenue.Name = "btnVenue";
+            this.btnVenue.Size = new System.Drawing.Size(150, 35);
+            this.btnVenue.TabIndex = 6;
+            this.btnVenue.Text = "Add Venue";
+            this.btnVenue.UseVisualStyleBackColor = true;
+            this.btnVenue.Click += new System.EventHandler(this.btnVenue_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(582, 553);
+            this.Controls.Add(this.btnVenue);
             this.Controls.Add(this.btnReports);
             this.Controls.Add(this.btnStaff);
             this.Controls.Add(this.btnEntryPass);
@@ -121,6 +133,7 @@
         private System.Windows.Forms.Button btnEntryPass;
         private System.Windows.Forms.Button btnStaff;
         private System.Windows.Forms.Button btnReports;
+        private System.Windows.Forms.Button btnVenue;
     }
 }
 

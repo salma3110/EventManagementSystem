@@ -57,5 +57,11 @@ namespace EventManagementApp
             ReportsForm form = new ReportsForm();
             form.Show();
         }
+
+        private void btnVenue_Click(object sender, EventArgs e)
+        {
+            VenueForm form = new VenueForm();
+            form.Show();
+        }
     }
 }
