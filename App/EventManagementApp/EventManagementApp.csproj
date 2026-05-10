@@ -122,6 +122,8 @@
     </Compile>
     <EmbeddedResource Include="VenueForm.resx">
       <DependentUpon>VenueForm.cs</DependentUpon>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>VenueForm1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="EventManagementDBDataSet.xsc">
       <DependentUpon>EventManagementDBDataSet.xsd</DependentUpon>
