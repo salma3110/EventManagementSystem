@@ -46,3 +46,26 @@ JOIN EntryClass ec ON g.gathering_id = ec.gathering_id
 WHERE MONTH(g.date) = MONTH(GETDATE()) - 1
 AND   YEAR(g.date)  = YEAR(GETDATE())
 ORDER BY g.title, ec.class_name;
+
+
+--Inquiry 1:category that sold the maximum number of entry passes
+SELECT g.category,
+       COUNT(ep.pass_id) AS total_passes
+FROM Gathering g
+JOIN EntryClass ec
+    ON g.gathering_id = ec.gathering_id
+JOIN EntryPass ep
+    ON ec.class_id = ep.class_id
+GROUP BY g.category
+HAVING COUNT(ep.pass_id) = (
+    SELECT MAX(pass_count)
+    FROM (
+        SELECT COUNT(ep.pass_id) AS pass_count
+        FROM Gathering g
+        JOIN EntryClass ec
+            ON g.gathering_id = ec.gathering_id
+        JOIN EntryPass ep
+            ON ec.class_id = ep.class_id
+        GROUP BY g.category
+    ) AS counts
+);
