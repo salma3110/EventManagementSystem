@@ -120,6 +120,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="StaffForm.resx">
+      <DependentUpon>StaffForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VenueForm.resx">
       <DependentUpon>VenueForm.cs</DependentUpon>
       <Generator>PublicResXFileCodeGenerator</Generator>
