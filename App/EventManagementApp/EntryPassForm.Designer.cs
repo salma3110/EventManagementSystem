@@ -1,6 +1,6 @@
 ﻿namespace EventManagementApp
 {
-    partial class EntryPass
+    partial class EntryPassForm
     {
         private System.ComponentModel.IContainer components = null;
 

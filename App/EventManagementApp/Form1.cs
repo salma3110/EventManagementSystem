@@ -42,7 +42,7 @@ namespace EventManagementApp
 
         private void btnEntryPass_Click(object sender, EventArgs e)
         {
-            EntryPassForm form = new EntryPassForm();
+            EntryPass form = new EntryPass();
             form.Show();
         }
 

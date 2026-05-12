@@ -5,9 +5,9 @@ using System.Windows.Forms;
 
 namespace EventManagementApp
 {
-    public partial class EntryPass : Form
+    public partial class EntryPassForm : Form
     {
-        public EntryPass()
+        public EntryPassForm()
         {
             InitializeComponent();
         }
